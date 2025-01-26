@@ -5,7 +5,7 @@
 import java.text.DecimalFormat;
 
 public class Converter {
-    public static String toPounds(int ounces) {
+    public String toPounds(int ounces) {
         DecimalFormat df = new DecimalFormat("0.0000");
         String poundsString = "";
         double pounds = ounces / 16.0;
@@ -16,7 +16,7 @@ public class Converter {
         return poundsString;
     }
 
-    public static String toPoundsAndOunces(int ounces) {
+    public String toPoundsAndOunces(int ounces) {
         String poundsAndOunces = "";
         int pounds = ounces / 16;
         int ouncesLeft = ounces % 16;
@@ -48,7 +48,7 @@ public class Converter {
         return poundsAndOunces;
     }*/
 
-    public static String toOunces(int pounds, int ouncesLeft) {
+    public String toOunces(int pounds, int ouncesLeft) {
         String ouncesString = "";
         int ounces = pounds * 16 + ouncesLeft;
         ouncesString += ounces + " oz";

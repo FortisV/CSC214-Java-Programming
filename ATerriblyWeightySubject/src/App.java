@@ -33,10 +33,10 @@ public class App {
         } while(repeat);
         scanner.close();
 
+        Converter converter = new Converter();
 
-
-        System.out.println(ounces + " is equivalent to " + Converter.toPounds(ounces));
-        System.out.println(ounces + " is equivelent to " + Converter.toPoundsAndOunces(ounces));
+        System.out.println(ounces + " is equivalent to " + converter.toPounds(ounces));
+        System.out.println(ounces + " is equivelent to " + converter.toPoundsAndOunces(ounces));
 
         System.out.println();
         System.out.println("Exiting...");
